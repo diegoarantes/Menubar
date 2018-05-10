@@ -1,0 +1,129 @@
+body {
+    background-color: #f4f7f9;
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.navbar {
+    background-color: #222d32;
+    width: 200px;
+    position: fixed;
+    top:50px;
+    bottom:0;
+    left:0;
+}
+.navbar ul {
+    padding: 0px;   
+}
+.navbar ul li a:hover {
+    background-color:#1e282c;  
+    color: #FFF;          
+}
+
+.navbar ul li a {
+    color: #b8c7ce;
+   
+    text-decoration: none;
+    display: block;
+    padding: 14px; 
+    padding-left: 15px; 
+
+    border-left: 3px solid transparent;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+    .logo {
+        width: 60px;
+    }
+    .ola {
+        display: none;
+    }
+}
+
+.navbar ul li a i {
+    width: 22px;
+}
+
+.navbar ul li a>.expand-container {
+    right: 5px;
+    float: right;
+    position: absolute;
+}
+.navbar ul li {list-style-type:none; display: inline;}
+
+.barra {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #3F51B5; 
+    height: 50px;
+
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.barra a {
+    color: #fff;
+    text-decoration: none;
+}
+.barra a:hover{
+    background-color: #283593; 
+}
+
+/*Barra Superior*/
+.logo {
+    float: left;
+    display: block;
+    background-color: #283593; 
+    height: 20px;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+@media (min-width: 601px) { 
+    .logo {
+        width: 170px;
+    } 
+}
+
+.toggle {
+    float: left;
+    display: block;
+    height: 100%;      
+}
+.toggle i {
+    padding: 18px 15px;
+}
+
+.user-bar {
+    float: left;
+    display: block;
+    height: 100%;
+    padding: 17px;
+
+    font-size: 13px;
+}
+
+.submenu {
+    font-size:12px;
+    background-color:#2c3b41;
+    padding: 5px 5px 5px 15px;
+}
+.submenu>li>a {
+    padding: 10px 10px 10px 25px !important;
+}
+.submenu>li>a:hover {
+    background-color:#2c3b41 !important;            
+}
+
+.footer-nav {
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    color: #b8c7ce;
+    font-size: 12px;
+}

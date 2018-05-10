@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#283593">
+    <title>Menubar</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="barra">
+        <a href="javascript:;" class="logo"><strong>E</strong>RP</a>
+        <a href="javascript:;" class="toggle"><i class="fa fa-bars"></i></a>
+
+        <div style="float: right">
+            <a href="javascript:;" class="user-bar"><span class="ola">Olá, </span>Diego Arantes</a>
+            <a href="javascript:;" class="toggle" style="float: right;"><i class="fa fa-sign-out"></i></a>
+        </div>       
+    </header>
+
+    <nav class="navbar" style="display:none;">
+        <ul>
+            <li><a href="#"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fa fa-files-o"></i>Pessoas</a></li>
+            <li><a href="#"><i class="fa fa-cube"></i>Estoque</a></li>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i>Vendas</a></li>
+            <li><a href="#"><i class="fa fa-credit-card"></i>Finanças</a></li>
+            
+            <li>
+                <a href="#" class="toggle-submenu">
+                    <i class="fa fa fa-envelope"></i>MailBox
+                                    
+                    <span class="expand-container">
+                        <i class="fa fa-angle-down"></i>
+                    </span>
+                </a>
+                <ul class="submenu" style="display: none">
+                        <li><a href="#"><i class="fa fa-circle-o"></i>Finanças</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i>Finanças</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i>Finanças</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="footer-nav">
+            Versão 1.0.1
+        </div>
+    </nav>
+
+
+    <!-- Jquery apenas para Testes -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.toggle').click(
+                function(){
+                    $(".navbar").toggle();
+            });
+            $('.toggle-submenu').click(
+                function(){
+                    $(".submenu").toggle();
+            });
+        });
+        </script>
+</body>
+</html>
