@@ -90,12 +90,12 @@ body {
     } 
 }
 
-.toggle {
+.top-icon {
     float: left;
     display: block;
     height: 100%;      
 }
-.toggle i {
+.top-icon i {
     padding: 18px 15px;
 }
 
@@ -126,4 +126,30 @@ body {
     padding: 10px;
     color: #b8c7ce;
     font-size: 12px;
+}
+
+.conteudo {
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    /*background-color: #FFF;*/
+}
+
+@media (min-width: 601px) { 
+    .conteudo-min {
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .conteudo-min {
+        margin-left: 20px;
+    }
+}
+
+.titulo {
+    border-bottom: 1px solid #e0dede;
+    padding-bottom: 5px;
+    color: #283593;
 }

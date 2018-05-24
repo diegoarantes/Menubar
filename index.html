@@ -12,11 +12,11 @@
 <body>
     <header class="barra">
         <a href="javascript:;" class="logo"><strong>E</strong>RP</a>
-        <a href="javascript:;" class="toggle"><i class="fa fa-bars"></i></a>
+        <a href="javascript:;" class="top-icon toggle"><i class="fa fa-bars"></i></a>
 
         <div style="float: right">
             <a href="javascript:;" class="user-bar"><span class="ola">Olá, </span>Diego Arantes</a>
-            <a href="javascript:;" class="toggle" style="float: right;"><i class="fa fa-sign-out"></i></a>
+            <a href="javascript:;" class="top-icon" style="float: right;"><i class="fa fa-sign-out"></i></a>
         </div>       
     </header>
 
@@ -48,6 +48,10 @@
         </div>
     </nav>
 
+    <section class="conteudo">
+        <h1 class="titulo">Dashboard</h1>
+    </section>
+
 
     <!-- Jquery apenas para Testes -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
@@ -56,6 +60,7 @@
             $('.toggle').click(
                 function(){
                     $(".navbar").toggle();
+                    $('.conteudo').toggleClass('conteudo-min');
             });
             $('.toggle-submenu').click(
                 function(){
