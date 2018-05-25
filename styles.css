@@ -59,7 +59,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #3F51B5; 
+    background-color: #426ba9; 
     height: 50px;
 
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -70,14 +70,14 @@ body {
     text-decoration: none;
 }
 .barra a:hover{
-    background-color: #283593; 
+    background-color: #4977bc; 
 }
 
 /*Barra Superior*/
 .logo {
     float: left;
     display: block;
-    background-color: #283593; 
+    background-color: #4977bc; 
     height: 20px;
     font-size: 20px;
     padding: 15px;
