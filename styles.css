@@ -21,17 +21,15 @@ body {
 }
 
 .navbar ul li a {
-    color: #b8c7ce;
-   
+    color: #b8c7ce;   
     text-decoration: none;
     display: block;
     padding: 14px; 
     padding-left: 15px; 
-
     border-left: 3px solid transparent;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .navbar {
         display: none;
     }
@@ -61,7 +59,6 @@ body {
     right: 0;
     background-color: #426ba9; 
     height: 50px;
-
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
@@ -84,7 +81,7 @@ body {
     text-align: center;
 }
 
-@media (min-width: 601px) { 
+@media (min-width: 701px) { 
     .logo {
         width: 170px;
     } 
@@ -104,7 +101,6 @@ body {
     display: block;
     height: 100%;
     padding: 17px;
-
     font-size: 13px;
 }
 
@@ -132,24 +128,23 @@ body {
     margin-top: 70px;
     margin-left: 20px;
     margin-right: 20px;
-
-    /*background-color: #FFF;*/
 }
 
-@media (min-width: 601px) { 
+@media (min-width: 701px) { 
     .conteudo-min {
         margin-left: 220px;
     }
 }
 
-@media (max-width: 600px) {
-    .conteudo-min {
-        margin-left: 20px;
+@media (max-width: 700px) {
+    .conteudo {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
 .titulo {
-    border-bottom: 1px solid #e0dede;
+    border-bottom: 1px solid #4977bc;
     padding-bottom: 5px;
-    color: #283593;
+    color: #426ba9;
 }
